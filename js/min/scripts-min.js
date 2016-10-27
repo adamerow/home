@@ -1,0 +1,1 @@
+$("h1").lettering(),$.backstretch("/nameplate/img/bg.jpg"),$("article").masonry({itemSelector:"section",columnWidth:200,gutter:10,isFitWidth:!0});
