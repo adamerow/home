@@ -23,31 +23,35 @@ section:after
 
 /* Can edit here */
 
-article
+div
 {
-    padding: 10px;
-    display: inline-block;
-    position: absolute;
+    float: left;
 }
 
 .left
 {
-    width: 50%;
+    width: 1000px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+img
+{
+    width: 1000px;
 }
 
 .right
 {
-    width: 40%;
-    float: right;
+    position: relative;
+    width: 50%;
 }
 
-h1
+.masonry
 {
-    font-size: 6em;
-    text-align: center;
-    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    margin: 0 auto;
 }
-
 
 /* Masonry Styling */
 section
@@ -57,14 +61,16 @@ section
     /* vertical space between */
     margin-bottom: 10px;
     /* MUST MATCH PLUGIN */
-    width: 255px;
+    width: 293px;
 }
 
-img
+/* TYPOGRAPHY */
+h1
 {
-    width: 100%;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
 }
-
 
 
 /********************

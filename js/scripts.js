@@ -2,13 +2,13 @@
 $('h1').lettering();
 
 // Intialize Backstretch
-$('.left').backstretch('/nameplate/img/bg.jpg');
+$('.left').backstretch('/img/bg.img');
 
 // Intialize Masonry
-$('.right').masonry({
+$('.masonry').masonry({
 	itemSelector: 'section',
 	// MUST MATCH CSS
-    columnWidth: 255,
+    columnWidth: 293,
 	gutter: 10,
 	isFitWidth: true
 });
