@@ -2,7 +2,11 @@
 $('h1').lettering();
 
 // Intialize Backstretch
-$('.left').backstretch('/img/bg.img');
+$('.left').backstretch([
+      "http://placehold.it/1500x1000/"
+    , "http://placehold.it/1000x1500/"
+    , "http://placehold.it/1000x1000/"
+  ], {duration: 4000, fade: 750});
 
 // Intialize Masonry
 $('.masonry').masonry({
