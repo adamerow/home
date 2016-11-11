@@ -3,9 +3,9 @@ $('h1').lettering();
 
 // Intialize Backstretch
 $('.left').backstretch([
-      "http://placehold.it/1500x1000/"
-    , "http://placehold.it/1000x1500/"
-    , "http://placehold.it/1000x1000/"
+      "img/me.jpg"
+    , "img/orange.png"
+    , "img/quadcopter.png"
   ], {duration: 4000, fade: 750});
 
 // Intialize Masonry
