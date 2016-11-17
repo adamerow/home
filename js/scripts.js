@@ -16,3 +16,33 @@ $('.masonry').masonry({
 	gutter: 10,
 	isFitWidth: true
 });
+
+////Close Buttons (closed)
+//$('#contact .close').click( function()
+//{
+//    $('#contact').removeClass('.open');
+//    $('#contact').addClass('.closed');
+//    $('#contact .close').hide();
+//});
+//
+//$('#resume .close').click( function()
+//{
+//    $('#resume').removeClass('.open');
+//    $('#resume').addClass('.closed');
+//    $('#resume .close').hide();
+//});
+//
+////Close Buttons (open)
+//$('#contact').click( funtion()
+//{
+//    $('#contact').removeClass('.closed');
+//    $('#contact').addClass('.open');
+//    $('#contact .close').show();
+//});
+//
+//$('#resume').click( funtion()
+//{
+//    $('#resume').removeClass('.closed');
+//    $('#resume').addClass('.open');
+//    $('#resume .close').show();
+//});

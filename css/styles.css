@@ -72,7 +72,38 @@ section
     width: 293px;
 }
 
+/******************/
+/*  CLOSE BUTTON  */
+/******************/
+#resume h2, #contact h2, .close
+{
+    display: inline;
+}
+
+.close
+{
+    float: right;
+    height: 32px;
+}
+
+.open
+{
+    background: teal;
+}
+
+.closed
+{
+    background: tomato;
+    height: 66px;
+    overflow: hidden;
+}
+
+/**************/
 /* TYPOGRAPHY */
+/**************/
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:600,300italic);
+
 h1
 {
     font-size: 3em;
@@ -80,12 +111,33 @@ h1
     text-transform: uppercase;
 }
 
+h2
+{
+    font-size: 2em;
+    margin: 0;
+}
+
+h3, a
+{
+    font-size: 1.5em;
+}
+
+/* Josefin */
+p, li
+{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+}
+
+h1, a, h2, h3, h4
+{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+}
 
 /********************
 MEDIA QUERIES
 *******************/
-
-
 /* Desktop */
 
 @media (min-width: 1200px) {}
