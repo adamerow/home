@@ -23,6 +23,20 @@ section:after
 
 /* Can edit here */
 
+/************/
+/*  LAYOUT  */
+/************/
+
+.container
+{
+    display: flex;
+}
+
+.item
+{
+    flex-grow: 1;
+}
+
 div
 {
     float: left;
@@ -36,11 +50,6 @@ div
     bottom: 0;
     width: 55%;
     overflow: hidden;
-}
-
-img
-{
-    width: 100%;
 }
 
 .right
@@ -77,13 +86,16 @@ section
 /******************/
 #resume h2, #contact h2, .close
 {
-    display: inline;
+    display: inline-block;
 }
 
 .close
 {
     float: right;
     height: 32px;
+    background: none;
+    border: none;
+    font-size: 2em;
 }
 
 .open
@@ -93,8 +105,7 @@ section
 
 .closed
 {
-    background: tomato;
-    height: 66px;
+    height: 63px;
     overflow: hidden;
 }
 
@@ -103,6 +114,21 @@ section
 /**************/
 @import url(https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:600,300italic);
+
+/* Add font: Josefin */
+p, li
+{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+}
+
+h1, a, h2, h3, h4, button
+{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+}
+
+/*******/
 
 h1
 {
@@ -115,24 +141,40 @@ h2
 {
     font-size: 2em;
     margin: 0;
+    margin-bottom: 15px;
 }
 
-h3, a
+h3
 {
-    font-size: 1.5em;
+    font-size: 20px;
 }
 
-/* Josefin */
-p, li
+h4
 {
-    font-family: 'Josefin Slab', serif;
-    font-weight: 400;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
-h1, a, h2, h3, h4
+a
 {
-    font-family: 'Josefin Slab', serif;
-    font-weight: 700;
+    font-size: 20px;
+}
+
+p
+{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+ul
+{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.work h4:nth-child(1), .school h4:nth-child(1)
+{
+    font-size: 1em;
 }
 
 /********************
