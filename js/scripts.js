@@ -3,11 +3,11 @@ $('h1').lettering();
 
 // Intialize Backstretch
 $('.left').backstretch(
-{
-    "img/me.jpg",
-    "img/orange.png",
-    "img/quadcopter.png"
-}, {duration: 5000, fade: 850});
+[
+    "img/me.jpg"
+    , "img/orange.png"
+    , "img/quadcopter.png"
+], {duration: 5500, fade: 800});
 
 // Intialize Masonry
 $('.masonry').masonry({
@@ -30,16 +30,20 @@ $('#resume .close').hide();
 $('#contact .close').click( function()
 {
     console.log("close clicked");
-    $('#contact').removeClass('open');
+    $('#contact').removeClass('open', 'animate');
     $('#contact').addClass('closed');
+//    $('#contact').animate(
+//        { height: 63 }, 200);
     $('#contact .close').hide();
 });
 
 $('#resume .close').click( function()
 {
     console.log("close clicked");
-    $('#resume').removeClass('open');
+    $('#resume').removeClass('open', 'animate');
     $('#resume').addClass('closed');
+//    $('#resume').animate(
+//        { height: 63 }, 200);
     $('#resume .close').hide();
 });
 
@@ -48,14 +52,14 @@ $('#contact h2').click( function()
 {
     console.log("open clicked");
     $('#contact').removeClass('closed');
-    $('#contact').addClass('open');
+    $('#contact').removeClass('animate');
     $('#contact .close').show();
 });
 
 $('#resume h2').click( function()
 {
     console.log("open clicked");
-    $('#resume').removeClass('closed');
+    $('#resume').removeClass('closed', 'animate');
     $('#resume').addClass('open');
     $('#resume .close').show();
 });
