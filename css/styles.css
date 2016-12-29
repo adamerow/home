@@ -23,6 +23,21 @@ section:after
 
 /* Can edit here */
 
+/************/
+/*  LAYOUT  */
+/************/
+
+.container
+{
+    display: flex;
+    font-weight: wrap;
+}
+
+.item
+{
+    flex-grow: 1;
+}
+
 div
 {
     float: left;
@@ -36,11 +51,6 @@ div
     bottom: 0;
     width: 55%;
     overflow: hidden;
-}
-
-img
-{
-    width: 100%;
 }
 
 .right
@@ -72,7 +82,55 @@ section
     width: 293px;
 }
 
+/******************/
+/*  CLOSE BUTTON  */
+/******************/
+#resume h2, #contact h2, .close
+{
+    display: inline-block;
+}
+
+.close
+{
+    float: right;
+    height: 32px;
+    background: none;
+    border: none;
+    font-size: 2em;
+}
+
+.open
+{
+    
+}
+
+.closed
+{
+    height: 63px;
+    overflow: hidden;
+}
+
+/**************/
 /* TYPOGRAPHY */
+/**************/
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:600,300italic);
+
+/* Add font: Josefin */
+p, li
+{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+}
+
+h1, a, h2, h3, h4, button, ul
+{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+}
+
+/*******/
+
 h1
 {
     font-size: 3em;
@@ -80,22 +138,108 @@ h1
     text-transform: uppercase;
 }
 
+h2
+{
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+h3
+{
+    font-size: 20px;
+}
+
+h4
+{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+a
+{
+    font-size: 20px;
+}
+
+p
+{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+ul
+{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#resume p, #resume h4
+{
+    padding-left: 31px;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+#resume ul
+{
+    padding: 0;
+}
+
+#resume .work
+{
+    margin-top: 20px;
+}
+
+#resume li
+{
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: 700;
+}
 
 /********************
 MEDIA QUERIES
 *******************/
-
-
 /* Desktop */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px)
+{
+    
+}
 
 
 /* Tablet */
 
-@media (min-width: 768px) {}
+@media (max-width: 768px)
+{
+    
+}
 
 
 /* Mobile */
 
-@media (min-width: 480px) {}
+@media (max-width: 480px)
+{
+    .left
+    {
+        width: 100%;
+        position: fixed;
+    }
+    
+    .right
+    {
+        position: relative;
+        display: inline;
+        width: 95%;
+        float: left;
+        left: 5%;
+        padding: 0;
+    }
+    
+    h1, a, h2, h3, h4, button, ul, p, li
+    {
+        color: white;
+    }
+}
