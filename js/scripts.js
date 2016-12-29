@@ -62,6 +62,7 @@ $('#resume h2').click( function()
     $('#resume').removeClass('closed', 'animate');
     $('#resume').addClass('open');
     $('#resume .close').show();
+<<<<<<< HEAD
 });
 
 //MEDIA QUERY
@@ -75,4 +76,6 @@ $(window).resize(function ()
         $('#contact').removeClass('animate');
         $('#contact .close').show();
     }
+=======
+>>>>>>> origin/gh-pages
 });

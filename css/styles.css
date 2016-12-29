@@ -30,7 +30,10 @@ section:after
 .container
 {
     display: flex;
+<<<<<<< HEAD
     font-weight: wrap;
+=======
+>>>>>>> origin/gh-pages
 }
 
 .item
@@ -101,7 +104,11 @@ section
 
 .open
 {
+<<<<<<< HEAD
     
+=======
+    background: teal;
+>>>>>>> origin/gh-pages
 }
 
 .closed
@@ -123,7 +130,11 @@ p, li
     font-weight: 400;
 }
 
+<<<<<<< HEAD
 h1, a, h2, h3, h4, button, ul
+=======
+h1, a, h2, h3, h4, button
+>>>>>>> origin/gh-pages
 {
     font-family: 'Josefin Slab', serif;
     font-weight: 700;
@@ -154,7 +165,10 @@ h4
 {
     margin: 0;
     margin-bottom: 10px;
+<<<<<<< HEAD
     font-size: 1.1em;
+=======
+>>>>>>> origin/gh-pages
 }
 
 a
@@ -172,6 +186,7 @@ ul
 {
     margin: 0;
     margin-bottom: 10px;
+<<<<<<< HEAD
     font-size: 1.1em;
 }
 
@@ -197,6 +212,13 @@ ul
     margin-bottom: 5px;
     margin-top: 15px;
     font-weight: 700;
+=======
+}
+
+.work h4:nth-child(1), .school h4:nth-child(1)
+{
+    font-size: 1em;
+>>>>>>> origin/gh-pages
 }
 
 /********************
@@ -212,7 +234,11 @@ MEDIA QUERIES
 
 /* Tablet */
 
+<<<<<<< HEAD
 @media (max-width: 768px)
+=======
+@media (min-width: 768px)
+>>>>>>> origin/gh-pages
 {
     
 }
@@ -220,6 +246,7 @@ MEDIA QUERIES
 
 /* Mobile */
 
+<<<<<<< HEAD
 @media (max-width: 480px)
 {
     .left
@@ -242,4 +269,9 @@ MEDIA QUERIES
     {
         color: white;
     }
+=======
+@media (min-width: 480px)
+{
+
+>>>>>>> origin/gh-pages
 }
